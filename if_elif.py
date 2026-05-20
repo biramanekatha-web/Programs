@@ -2,10 +2,24 @@
 appropriate message to the user for less display wait for --- years and age is above 75 then display you are not eligible for driving license. 
 otherwise welcome to pune RTO office.'''
 
-age=int(input("enter the age:"))
+'''age=int(input("enter the age:"))
 if(18<=age <75):
     print("welcome to pune RTO office..")
 elif(age<18):
     print(f"wait for {18-age} years..")
 else:
-    print("you are not eligible for driving license..")
+    print("you are not eligible for driving license..")'''
+    
+age = int(input("Enter your age: "))
+
+if age < 18:
+    wait = 18 - age
+    print("You are not eligible for driving license.")
+    print("Please wait for", wait, "years.")
+
+elif age > 75:
+    print("You are not eligible for driving license.")
+
+else:
+    print("Welcome to Pune RTO Office.")
+    print("You are eligible for driving license.")
